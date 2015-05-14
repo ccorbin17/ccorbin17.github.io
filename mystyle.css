@@ -1,12 +1,13 @@
  <head>
  <style>
  body{
- 	
- }
- p{color:blue;
+
  background-image: url(background.jpg) blue;
  	background-position: top center;
 	background-repeat: no-repeat;
  	background-attachment: fixed;
 	background-color:black; }
-h1{color:purple;}
+ 	
+ }
+p{font-color:blue;} 
+h1{font-color:purple;}
