@@ -1,0 +1,9 @@
+ <head>
+ <style>
+ body{
+ 	background-image: url(background.jpg) purple;
+ 	background-position: top center
+ 	no-repeat
+ 	fixed
+	background-color:black; 
+ }
