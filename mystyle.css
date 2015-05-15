@@ -17,9 +17,11 @@
  	 	background-color: #d0f0f6
  	 }
  	 .bio{
+ 	 	border: 2px solid gray;
+ 	 	background-color: #d0f0f6;
  	  	background-image:url(me.jpg);
  	  	background-position: left;
- 	  	backgruound-norepeat: no-repeat;
+ 	  
 
  	 }
  body{
