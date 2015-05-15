@@ -16,11 +16,14 @@
  	 	border: 2px solid gray;
  	 	background-color: #d0f0f6
  	 }
- 	 .bio{
- 	 	border: 2px solid gray;
- 	 	background-color: #d0f0f6;
- 	  	background-image:url(me.jpg);
- 	  	background-position: left;
+ 	 .bio_div{
+ 	border: 2px solid gray;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 90%;
+ 	background-color: #d0f0f6;
+ 	text-align: center;
+ 	padding: 8px;
  	  
 
  	 }
