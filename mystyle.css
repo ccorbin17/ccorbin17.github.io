@@ -10,10 +10,13 @@
  	width: 90%;
  	background-color: #d0f0f6;
  	text-align: center;
- 	padding: 8px
+ 	padding: 8px;
  	 }
  body{
- 	background: #5d9ab2 url("background.jpg) no-repeat center;
+ 	 	background-image: url(background.JPG);
+
+ }
+ 
  
 
 </style>
