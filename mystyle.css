@@ -13,8 +13,8 @@
  	padding: 8px;
  	 }
  	 .resume_div{
- 	 	border: 1px black;
- 	 	background-color: #5EFB6E
+ 	 	border: 2px solid gray;
+ 	 	background-color: #d0f0f6
  	 }
  body{
  	 	background-image: url(background.JPG);
