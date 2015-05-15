@@ -12,6 +12,10 @@
  	text-align: center;
  	padding: 8px;
  	 }
+ 	 .resume_div{
+ 	 	border: 1px black;
+ 	 	background-color: #5EFB6E
+ 	 }
  body{
  	 	background-image: url(background.JPG);
 
