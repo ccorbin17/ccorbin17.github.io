@@ -12,6 +12,10 @@
  	text-align: center;
  	padding: 8px;
  	 }
+  .aboutme{
+    float:left;
+    margin-right:5px;
+}
  	 .resume_div{
  	 	border: 2px solid gray;
  	 	background-color: #d0f0f6
