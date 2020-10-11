@@ -138,3 +138,7 @@ pre {
 	border-style: solid;
 	border-color: #000000;
 }
+#column {
+  float: left;
+  width: 50%;
+}
