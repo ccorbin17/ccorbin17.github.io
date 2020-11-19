@@ -29,7 +29,8 @@ a:visited {
 .box {
   width: 850px;
   margin: 20px auto 20px auto;
-  border: 2px solid #000000;
+  border-width: 2px;
+  border-style: hidden;
   text-align: left;
   background-color: #ffffff;
 }
