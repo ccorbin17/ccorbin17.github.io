@@ -1,4 +1,3 @@
-// includeHTML.js
 function includeHTML() {
     const z = document.getElementsByTagName("*");
     for (let i = 0; i < z.length; i++) {
