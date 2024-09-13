@@ -5,10 +5,15 @@ function includeHTML() {
         const file = elmnt.getAttribute("include-html");
         if (file) {
             fetch(file)
-                .then(response => response.text())
-                .then(data => elmnt.innerHTML = data)
-                .catch(error => console.log('Error:', error));
-            return;
+            .then(response => response.text())
+            .then(data => {
+                elmnt.innerHTML = data;
+                   setTimeout(() => {
+                    document.body.style.display = 'block'; // Add refresh for css
+                }, 100);
+            })
+            .catch(error => console.log('Error:', error));
+        return;
         }
     }
 }
