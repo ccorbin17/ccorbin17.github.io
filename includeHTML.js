@@ -1,33 +1,23 @@
 function includeHTML() {
-    const z = document.getElementsByTagName("*");
-    for (let i = 0; i < z.length; i++) {
-        const elmnt = z[i];
+    const elements = document.querySelectorAll("[include-html]");
+    elements.forEach(elmnt => {
         const file = elmnt.getAttribute("include-html");
         if (file) {
             fetch(file)
-            .then(response => response.text())
-            .then(data => {
-                elmnt.innerHTML = data;
-                   setTimeout(() => {
-                    document.body.style.display = 'block'; // Add refresh for css
-                }, 100);
-            })
-            .catch(error => console.log('Error:', error));
-        return;
+                .then(response => response.text())
+                .then(data => {
+                    elmnt.innerHTML = data;
+                    document.dispatchEvent(new Event('injectionComplete'));
+                })
+                .catch(error => console.log('Error loading HTML:', error));
         }
-    }
+    });
 }
 
-function includeHeadElements() {
-    const headContent = `
-        <title>Carina's Corner</title>
-        <link rel="shortcut icon" type="image/x-icon" href="me.jpg" />
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-    `;
-    document.head.insertAdjacentHTML('beforeend', headContent);
-}
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     includeHTML();
-    includeHeadElements();
+    
+    document.addEventListener("injectionComplete", () => {
+        console.log("HTML content injected and layout adjustments triggered.");
+    });
 });
